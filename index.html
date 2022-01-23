@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Наш Проект</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="shortcut icon" href="img/NERVlogo.png" type="image/png"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ************************************ Header ************************************* -->
+  <header class="navbar-region">
+    <div class="header-background"></div>
+    <video autoplay muted loop class="video-back">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="navbar navbar-expand-lg navbar-dark pt-4" id="navbar">
+        <div class="container-fluid px-2 px-lg-0">
+            <div class="ms-0 ms-lg-4">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="img/drupal-coder.svg" alt="Project" width="200" height="35">
+            </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light navbar-effect" aria-current="page" href="#">Поддержка Drupal
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown" onmouseover="showDropdown('#navbarDropdown-1','#list-1')" onmouseout="hideDropdown('#navbarDropdown-1','#list-1')">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Администрирование
+                        </a>
+                        <ul id="list-1" class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown-1">
+                            <li><a class="dropdown-item text-light" href="https://github.com/SergeiB2002/Project">Миграция</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Бэкапы</a></li>
+                            <li><a class="dropdown-item text-light" href="#">Аудит безопасности</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Продвижение</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Реклама</a>
+                    </li>
+                    <li class="nav-item dropdown" onmouseover="showDropdown('#navbarDropdown-2','#list-2')" onmouseout="hideDropdown('#navbarDropdown-2','#list-2')">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-expanded="false">
+                            О нас
+                        </a>
+                        <ul id="list-2" class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown-2">
+                            <li><a class="dropdown-item text-light" href="#team">Команда</a></li>
+                            <li><a class="dropdown-item text-light" href="#blogger">DRUPALGIVE</a></li>
+                            <li><a class="dropdown-item text-light" href="#blogger">Блог</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-data container-fluid">
+        <div class="row d-flex" id="header-data">
+            <div class="col-10 col-lg-5 px-3 text-start ms-4 me-auto py-5">
+                <h1 class="text-about-main">
+                    Поддержка
+                    <br/>
+                    сайтов на Drupal
+                </h1>
+                <div class="text-about-service">
+                    Сопровождение и поддержка сайтов
+                    <br/>
+                    на CMS Drupal любых версий и сложности
+                </div>
+                <a role="button" href="#tariff" class="btn btn-outline-light btn-tariff mt-5">
+                    Тарифы
+                </a>
+            </div>
+            <div class="col-11 col-lg-6 me-sm-3 mx-auto mt-3 pb-5 pb-lg-0 py-5">
+                <div class="row">
+                    <div class="col-5 col-sm-4 achievement-tab ms-auto me-auto">
+                        <div class="row">
+                            <div class="col-3 achievement-tab-title-main">
+                                #1
+                            </div>
+                            <div class="col ms-2">
+                                <img src="img/cup.png" alt="cup">
+                            </div>
+                            <p class="extra-text extra-text-zero">
+                                Drupal-разработчик
+                                <br/>
+                                в России по версии Рейтинга Рунета
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-4 achievement-tab ms-auto me-auto">
+                        <div class="a-t-wrapper">
+                            <div class="achievement-tab-title">3+</div>
+                            <p class="extra-text">
+                                средний опыт
+                                <br/>
+                                специалистов более
+                                <br/>
+                                более 3 лет
+                            </p>
+                            </div>
+                        </div>
+                    <div class="col-5 col-sm-4 achievement-tab mt-sm-0 mt-4 ms-auto me-auto">
+                        <div class="achievement-tab-title">14</div>
+                        <p class="extra-text">
+                            лет опыта в сфере Drupal
+                        </p>
+                    </div>
+                    <div class="col-5 col-sm-4 achievement-tab mt-4 ms-auto me-auto">
+                        <div class="achievement-tab-title">50+</div>
+                        <p class="extra-text">
+                            модулей и тем
+                            <br/>
+                            в формате DRUPALGIVE
+                        </p>
+                    </div>
+                    <div class="col-5 col-sm-4 achievement-tab mt-4 ms-auto me-auto">
+                        <div class="achievement-tab-title">90 000+</div>
+                        <p class="extra-text">
+                            часов поддержки
+                            <br/>
+                            сайтов на Drupal
+                        </p>
+                    </div>
+                    <div class="col-5 col-sm-4 achievement-tab mt-4 ms-auto me-auto">
+                        <div class="achievement-tab-title">300+</div>
+                        <p class="extra-text">
+                            Проектов
+                            <br/>
+                            на поддержке
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ************************************ Header ************************************* -->
+
+<!-- ************************************ Competency ************************************* -->
+<div class="container-fluid competency-region">
+
+    <div class="competencies">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="competency-title">13 лет совершенствуем компетенции в Drupal поддержке!</h2>
+              <div class="competencies-description">
+                Разрабатываем и оптимизируем модули, расширяем функциональность сайтов, обновляем дизайн
+              </div>  
+            </div>
+          </div>   
+          <div class="row row-flex competencies-row">
+            <div class="col-6 col-md-3">
+              <div class="competency mb-3">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="Добавление информации на сайт, создание новых разделов" src="img/competency-1.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Добавление <br> информации на сайт,<br> создание новых <br> разделов
+                  </div>
+                </div>                
+              </div> 
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="competency">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="Разработка и оптимизация модулей сайта" src="img/competency-2.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Разработка <br> и оптимизация <br> модулей сайта
+                  </div>
+                </div>                
+              </div> 
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="competency">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="Интеграция" src="img/competency-3.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Интеграция с CRM, <br> 1C, платежными <br> системами, любыми <br> веб-сервисами
+                  </div>
+                </div>                
+              </div> 
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="competency">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="Доработки" src="img/competency-4.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Любые доработки <br> функционала <br> и дизайна
+                  </div>
+                </div>                
+              </div> 
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="competency">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="Безопасность" src="img/competency-5.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Аудит и мониторинг <br> безопасности Drupal <br> сайтов
+                  </div>
+                </div>                
+              </div> 
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="competency">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="Миграция" src="img/competency-6.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Миграция, импорт <br> контента и апгрейд <br> Drupal
+                  </div>
+                </div>                
+              </div> 
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="competency">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="Оптимизация" src="img/competency-7.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Оптимизация <br> и ускорение <br> Drupal-сайтов
+                  </div>
+                </div>                
+              </div> 
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="competency">
+                <div class="competency-wrapper">
+                  <div class="competency-header">
+                    <div class="competency-icon"><img alt="SEO" src="img/competency-8.svg" class="img-responsive"></div>
+                  </div>
+                  <div class="competency-body">
+                    Веб-маркетинг, <br> консультации <br> и работы по SEO
+                  </div>
+                </div>                
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- ************************************ Competency ************************************* -->
+
+<!-- ************************************ Support ************************************* -->
+<div class="support">
+  <div class="container">
+    <div class="row">
+      <h2 class="col-md-12 support-text">Поддержка<br>от Drupal-coder</h2>
+    </div>
+    <div class="row row-flex support-row">
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">
+            01.
+          </div>
+          <div class="serv-body">
+            <h2 class="serv-article">Постановка задачи по Email</h3>
+            <div class="serv-body-text">Удобная и привычная модель постановки задач, при которой задачи фиксируются и никогда не теряются.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support1.svg" alt="Email">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">02.</div>
+          <div class="serv-body">
+            <h2 class="serv-article">Система Helpdesk – отчетность, прозрачность</h3>
+            <div class="serv-body-text">Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support2.svg" alt="Helpdesk">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">03.</div>
+          <div class="serv-body">
+            <h2 class="serv-article">Расширенная техническая поддержка</h3>
+            <div class="serv-body-text">Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support3.svg" alt="Helpdesk">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">04.</div>
+          <div class="serv-body">
+            <h2 class="serv-article">Персональный менеджер проекта</h3>
+            <div class="serv-body-text">Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support4.svg" alt="Helpdesk">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">05.</div>
+          <div class="serv-body">
+            <h2 class="serv-article">Удобные способы оплаты</h3>
+            <div class="serv-body-text">Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support5.svg" alt="Helpdesk">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">06.</div>
+          <div class="serv-body">
+            <h2 class="serv-article">Работаем с SLA и NDA</h3>
+            <div class="serv-body-text">Работа в рамках соглашений о конфиденциальности и об уровне качетсва работ.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support6.svg" alt="Helpdesk">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">07.</div>
+          <div class="serv-body">
+            <h2 class="serv-article">Штатные специалисты</h3>
+            <div class="serv-body-text">Надежные штатные специалисты, никаких фрилансеров.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support7.svg" alt="Helpdesk">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 serv-cols">
+        <div class="support-service">
+          <div class="serv-num">08.</div>
+          <div class="serv-body">
+            <h2 class="serv-article">Удобные каналы связи</h3>
+            <div class="serv-body-text">Консультации по телефону, скайпу, в месенджерах.</div>
+          </div>
+          <div class="serv-img">
+            <img src="img/support8.svg" alt="Helpdesk">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="experience">
+  <div class="container">
+    <div class="row">
+      <div class="col-0 col-md-6"></div>
+      <div class="col-12 col-md-6">
+        <div class="row experience-article-row">
+          <div class="col-12 col-sm-6">
+            <h2 class="experience-article">Экспертиза в Drupal,<br> опыт 14 лет!</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-2">
+            <div class="experience-body">
+              Только системный подход – контроль версий, резервирование и тестирование!
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 mb-2">
+            <div class="experience-body">
+              Только Drupal сайты, не берем на поддержку сайты на других CMS!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="laptop-pic">
+    <img src="img/laptop.png" alt="Ноутбук"class="laptop-left">
+  </div>
+</div>
+<!-- ************************************ Support ************************************* -->
+
+<!-- ************************************ Plans ************************************* -->
+<div class="container-fluid" id="tariff">
+  <div class="row price-wrapper">
+      <div class="col-12 my-4 price-header text-center text-black">
+          <h1>
+              Тарифы
+          </h1>
+      </div>
+      <div class="col-10 price-row mx-auto">
+          <div class="row">
+              <div class="col-10 col-md-4 mx-auto mt-3 price-block-wrapper price-van">
+                  <div class="price-block py-2 px-2 pb-3 price-standard">
+                      <div class="price-header pt-2">
+                          <h2>
+                              Стартовый
+                          </h2>
+                      </div>
+                      <div class="price-body text-center">
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Разработка и поддержка Drupal
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Консультации и работы по SEO
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Услуги дизайнера
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Неиспользованные оплаченные часы переносятся на следующий месяц
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Предоплата от 6 000 рублей в месяц
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="price-footer text-center mt-2">
+                          <a href="#footerRegion" role="button" class="btn btn-outline-light btn-price">Свяжитесь с нами!</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-10 col-md-4 mx-auto mt-1 price-block-wrapper price">
+                  <div class="price-block py-4 px-2 pb-3 price-business price-block-active">
+                      <div class="price-header pt-2">
+                          <h2>
+                              Бизнес
+                          </h2>
+                      </div>
+                      <div class="price-body text-center">
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Разработка и поддержка Drupal
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Консультации и работы по SEO
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Услуги дизайнера
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Высокое время реакции - до 2 рабочих дней
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Неиспользованные оплаченные часы не переносятся
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Предоплата от 30 000 рублей в месяц
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="price-footer text-center mt-2">
+                          <a href="#footerRegion" role="button" class="btn btn-outline-light btn-price">Свяжитесь с нами!</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-10 col-md-4 mx-auto mt-3 price-block-wrapper price-billy">
+                  <div class="price-block py-2 px-2 pb-3 price-vip">
+                      <div class="price-header pt-2">
+                          <h2>
+                              VIP
+                          </h2>
+                      </div>
+                      <div class="price-body text-center">
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Разработка и поддержка Drupal
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Консультации и работы по SEO
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Услуги дизайнера
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Максимальное время реакции - в день обращения
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Неиспользованные оплаченные часы не переносятся
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="price-text">
+                              <div class="row gx-1">
+                                  <div class="col-2">
+                                      <img src="img/v-sign.svg" alt="double-v-sign" width="16" height="16">
+                                  </div>
+                                  <div class="col-10 text-start">
+                                      <p>
+                                          Предоплата от 270 000 рублей в месяц
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="price-footer text-center mt-2">
+                          <a href="#footerRegion" role="button" class="btn btn-outline-light btn-price">Свяжитесь с нами!</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6 tariff-link-block text-center">    
+      Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!
+      <a href="#footerRegion" class="tariffs-link d-block mt-3">Получить индивидуальный тариф</a>
+      </div>
+      <div class="col-3"></div>
+  </div>
+</div>
+<!-- ************************************ Plans ************************************* -->
+
+<!-- ************************************ Cases ************************************* -->
+<div id="blogger" class="container blog my-4">
+  <h1 class="text-center mb-5"> Последние кейсы</h1>
+  <div class="row gy-4">
+      <div class="blog-guts col-12 col-md-4">
+          <div class="blog-body position-relative">
+              <article>
+                  <a href="#">
+                      <div class="blogimage">
+                          <img src="img/new1.png" class="img-fluid" alt="news-1" width="840" height="475"/>
+                      </div>
+                      <div class="header-date px-3 py-4">
+                          <h5> <b>Настройка кэширования данных. Апгрейд сервера. Ускорение работы сайта в 30 раз!</b> </h5>
+                          <div class="blog-date">
+                              <p> 04.05.2020 </p>
+                          </div>
+                          <div class="blog-desc mt-4">
+                              <p> Влияние скорости загрузки страниц сайта на отказы и конверсии. Кейс ускорения... </p>
+                          </div>
+                      </div>
+                  </a>
+              </article>
+          </div>
+      </div>
+      <div class="blog-guts col-12 col-md-8">
+          <article>
+              <a href="#">
+                  <div class="blog-body position-relative">
+                      <div class="blogimage-internalized imagemain">
+                          <img src="img/news2.jpg"  class="img-fluid" alt="news-2" width="840" height="475"/>
+                      </div>
+                      <div class="header-date header-date-internalized px-3 py-4">
+                          <h5><b> Использование отчетов Ecommerce в Яндекс.Метрикеа</b> </h5>
+                      </div>
+                  </div>
+              </a>
+          </article>
+      </div>
+      <div class="blog-guts col-12 col-md-4">
+          <article>
+              <a href="#">
+                  <div class="cringe position-relative">
+                      <div class="blogimage-internalized">
+                          <img src="img/news3.jfif" class="img-fluid" alt="news-3" width="840" height="475"/>
+                      </div>
+                      <div class="header-date header-date-internalized px-3 py-4">
+                          <h5><b> Повышение конверсии страницы с формой заявки с применением AB-тестирования
+                              Повышение конверсии страницы с формой заявки с применением AB-тестирования</b> </h5>
+                          <div class="blog-date">
+                              <p> 24.01.2020 </p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </article>
+      </div>
+      <div class="blog-guts col-12 col-md-4">
+          <article>
+              <a href="#">
+                  <div class="cringe position-relative">
+                      <div class="blogimage-internalized">
+                          <img src="img/news4.jfif" class="img-fluid" alt="news-4" width="840" height="475"/>
+                      </div>
+                      <div class="header-date header-date-internalized px-3 py-4">
+                          <h5><b> Drupal 7: ускорение времени генерации страниц интернет-магазина на 32% </b> </h5>
+                          <div class="blog-date">
+                              <p> 23.09.19 </p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </article>
+      </div>
+      <div class="blog-guts col-12 col-md-4">
+          <article>
+              <a href="#">
+                  <div class="position-relative">
+                      <div class="blogimage">
+                          <img src="img/news5.jpg" class="img-fluid" alt="news-5" width="840" height="475">
+                      </div>
+                      <div class="header-date px-3 py-4">
+                          <h5> Обмен товарами и заказами интернет-магазинов на Drupal 7 с 1С: Предприятие, МойСклад, Класс365 </h5>
+                          <div class="blog-date">
+                              <p> 22.08.2019 </p> 
+                          </div>
+                          <div class="blog-desc mt-4">
+                              <p> Опубликован релиз модуля... </p>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </article>
+      </div>
+  </div>
+</div>
+<!-- ************************************ Cases ************************************* -->
+
+<!-- ************************************ Team ************************************* -->
+<h2 id="team" class="text-center support-text"><b> Команда </b></h2>
+<div class="container team">
+  <div class="team_members row">
+    <div class="col-md-4 col-6 mb-2">
+      <div class="team_members_content container">
+        <div class="member_picture mb-3"><img src="img/IMG_2472_0.jpg"></div>
+        <div class="member_name mb-1"><b>Лёша</b></div>
+        <div class="member_discription mb-5">руководитель поддержки, планирование задач</div>
+      </div>
+    </div>
+    <div class="col-md-4 col-6 mb-2">
+      <div class="team_members_content container">
+        <div class="member_picture mb-3"><img src="img/IMG_2522_0.jpg"></div>
+        <div class="member_name mb-1"><b>Роман</b></div>
+        <div class="member_discription mb-5">инфраструктура веб-проектов</div>
+      </div>
+    </div>
+    <div class="col-md-4 col-6 mb-2">
+      <div class="team_members_content container">
+        <div class="member_picture mb-3"><img src="img/IMG_2539_0.jpg"></div>
+        <div class="member_name mb-1"><b>Ирина</b></div>
+        <div class="member_discription mb-5">менеджер по работе
+          с клинетами, организация оказания услуг</div>
+      </div>
+    </div>
+    <div class="col-md-4 col-6 mb-2">
+      <div class="team_members_content container">
+        <div class="member_picture mb-3"><img src="img/IMG_9971_16.jpg"></div>
+        <div class="member_name mb-1"><b>Даша</b></div>
+        <div class="member_discription mb-5">SEO, веб-маркетинг</div>
+      </div>
+    </div>
+    <div class="col-md-4 col-6 mb-2">
+      <div class="team_members_content container">
+        <div class="member_picture mb-3"><img src="img/IMG_2472_0.jpg"></div>
+        <div class="member_name mb-1"><b>Сергей</b></div>
+        <div class="member_discription mb-5">технический директор, 14 лет опыт работы с Drupal</div>
+      </div>
+    </div>
+    <div class="col-md-4 col-6 mb-2">
+      <div class="team_members_content container">
+        <div class="member_picture mb-3"><img src="img/IMG_2522_0.jpg"></div>
+        <div class="member_name mb-1"><b>Вадим</b></div>
+        <div class="member_discription mb-5">UX/UI дизайн</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ************************************ Team ************************************* -->
+
+<!-- ************************************ Reviews ************************************* -->
+<div class="reviews">
+    <h2 class="text-center support-text">
+        Отзывы
+    </h2>
+</div>
+<div class="container-fluid reviews-content" id="ReviewsSlider">
+    <div class="row gx-2">
+        <div class="reviews-slide col-11 col-sm-9 col-md-8 py-3 mx-auto">
+            <div><img src="img/logo-estee.png" alt="estee"/>
+                <p>
+                    Наша компания Estee Design занимается дизайном интерьеров. Сайт сверстан на Drupal. Искали программистов под выполнение ряда небольших изменений и корректировок по сайту.
+                    Пообщавшись с Алексеем Синицей, приняли решение о начале работ с компанией Initlab/drupal-coder. Сотрудничеством довольны на 100%. 
+                    Четкая и понятная система коммуникации, достаточно оперативное решение по задачам. Дали рекомендации по улучшению програмной части сайта, 
+                    исправили ряд скрытых ошибок.
+                    Никогда не пишу отзывы (нет времени), но в данном случае, по просьбе Алексея, не могу не рекомендовать Initlab другим людям - 
+                    действительно компания профессионалов.
+                </p>
+                <p> 
+                    Кузин Вадим, руководитель строительного направления Дизайн-бюро интерьеров Estee  
+                    <a href="http://estee-design.ru">
+                        estee-design.ru
+                    </a>
+                </p>
+              </div>
+              <div><img src="img/cableman_ru.png" alt="cable"/>
+                <p> 
+                    Наша компания за несколько лет сменила несколько команд программистов и специалистов техподдержки,
+                     и почти отчаялась найти на российском рынке адекватное профессиональное предложение по разумной цене. 
+                     Пока мы не начали работать с командой "Инитлаб", воплощающей в себе все наши представления о нормальной системе взаимодействия в сочетании с 
+                     профессиональным неравнодушием. Впервые в моей деловой практике я чувствую надежно прикрытыми важнейшие задачи в жизни электронного СМИ, при том, 
+                     что мои коллеги работают за сотни километров от нас и мы никогда не встречались лично.
+                </p>
+                <p> 
+                    Константин Бельский, зам. генерального директора портала 
+                    <a href="http://www.cableman.ru/" tabindex="0">
+                        Кабельщик.ру
+                    </a> 
+                </p>
+              </div>
+              <div><img src="img/nashagazeta_ch.png" alt="gazeta"/>
+                <p>
+                    Моя электронная газета www.nashagazeta.ch существует в Швейцарии уже 10 лет. За это время мы сменили 7 специалистов по техподдержке, и только сейчас, 
+                    в последние несколько месяцев, с начала сотрудничества с Алексеем Синицей и его командой, 
+                    я впервые почувствовала, что у меня есть надежный технический тыл. Без громких слов и обещаний, ребята просто спокойно и качественно делают работу, быстро реагируют, 
+                    находят решения, предлагают конкретные варианты улучшения функционирования сайта и сами их оперативно осуществляют. Сотрудничество с ними – одно удовольствие!
+                </p>
+                <p>Надежда Сикорская, Женева, Швейцария</p>
+              </div>
+        </div>
+        <div class="arrows-slick text-center d-flex col-11 col-sm-9 col-md-4 my-2 my-md-4 mx-auto">
+            <div class="arrows-wrapper d-block mx-auto my-3 my-md-auto"  id="arrows">
+               <span class="arrows-block"> 
+                   <span class="current">01</span>
+                / 03
+                </span>
+            </div>
+        </div>
+       </div>
+</div>
+<!-- ************************************ Reviews ************************************* -->
+
+<!-- ************************************ Partners ************************************* -->
+<div class="container-fluid PartnersSliderWrapper">
+    <div class="text-center">
+            <h2 class="support-text">
+                С нами работают
+            </h2>
+            <p>
+                Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.
+            </p>
+<div class="PartnersSlider1 my-2" id="PartnersSlider1">
+  <div class="SupportPic"><img src="img/SupportSlider/RedBullRacinglogo.jpg" alt="rbr" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/fialogofinal.png" alt="fia" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Hondalogo.png" alt="honda" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Gazprom-Logo-rus.png" alt="gaz" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/RedBullRacinglogo.jpg" alt="rbr" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/fialogofinal.png" alt="fia" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Hondalogo.png" alt="honda" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Gazprom-Logo-rus.png" alt="gaz" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/RedBullRacinglogo.jpg" alt="rbr" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/fialogofinal.png" alt="fia" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Hondalogo.png" alt="honda" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Gazprom-Logo-rus.png" alt="gaz" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/RedBullRacinglogo.jpg" alt="rbr" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/fialogofinal.png" alt="fia" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Hondalogo.png" alt="honda" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Gazprom-Logo-rus.png" alt="gaz" width="300" height="150"/></div>
+</div>
+<div class="PartnersSlider2 my-2" id="PartnersSlider2">
+  <div class="SupportPic"><img src="img/SupportSlider/AMDLogopng.png" alt="amd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/MSI.png" alt="msi" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Nvidialogo.png" alt="nvd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/ROG.png" alt="rog" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/AMDLogopng.png" alt="amd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/MSI.png" alt="msi" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Nvidialogo.png" alt="nvd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/ROG.png" alt="rog" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/AMDLogopng.png" alt="amd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/MSI.png" alt="msi" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Nvidialogo.png" alt="nvd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/ROG.png" alt="rog" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/AMDLogopng.png" alt="amd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/MSI.png" alt="msi" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/Nvidialogo.png" alt="nvd" width="300" height="150"/></div>
+  <div class="SupportPic"><img src="img/SupportSlider/ROG.png" alt="rog" width="300" height="150"/></div>
+</div>
+
+</div>
+<!-- ************************************ Partners ************************************* -->
+
+<!-- ************************************ Webform ************************************* -->
+<div class="container-fluid pt-3 pb-5 pb-md-0 footer-region" id="footerRegion">
+    <div class="footer-region-background"></div>
+    <div class="row d-flex mt-2 px-2">
+        <div class="col-11 col-md-10 mx-auto px-0">
+            <div class="row">
+                <div class="col-11 col-md-5 mx-auto">
+                    <h5 class="text-head-footer text-md-start text-center">
+                        Оставить заявку на 
+                        <br/>
+                        поддержку сайта
+                    </h5>
+                    <p class="text-extra-footer text-start">
+                        Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? 
+                        Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!
+                    </p>
+                    <div class="text-start">
+                        <a class="text-light text-decoration-none phone" href="tel:89604952331">
+                            8 800 222-26-73
+                        </a>
+
+                    </div>
+                    <div class="text-start">
+                        <a class="text-light email" href="mailto:info@drupal-coder.ru">
+                            info@drupal-coder.ru
+                        </a>
+                    </div>
+                </div>
+                <div class="col-11 col-md-5 mx-auto">
+                    <form id="Form" action="https://formcarry.com/s/0tAvUSy9qZ1" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+                        <div class="form-row">
+                            <div class="col-12">
+                                <label class="text-light form-group"><br/>
+                                    <input class="form-control form-control-md info" type="text" name="userName" placeholder="Ваше имя" autocomplete="off">
+                                </label><br/>
+                            </div>
+                            <div class="col-12">
+                                <label class="text-light form-group"><br/>
+                                    <input class="form-control form-control-md info" type="text" name="userPhone" placeholder="Телефон" autocomplete="off">
+                                </label><br/>
+                            </div>
+                            <div class="col-12">
+                                <label class="text-light form-group"><br/>
+                                    <input class="form-control form-control-md info" type="email" name="userEmail" placeholder="E-mail" autocomplete="off">
+                                </label><br/>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-group"><br/>
+                                    <textarea class="form-control form-control-md info" name="userMsg" placeholder="Ваш комментарий" autocomplete="off"></textarea>
+                                </label><br/>
+                            </div>
+                            <div class="col-12">
+                                <label class="text-light form-group">
+                                    <input type="checkbox" id="check" class="info">
+                                    Согласен с 
+                                    <a class="form-politics" href="https://www.gazprom.ru/about/legal/policy-personal-data/" rel="nofollow">
+                                        политикой обработки персональных данных
+                                    </a>
+                                </label><br/>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <input class="btn btn-footer" type="submit" id="Button" value="Свяжитесь с нами!" disabled>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mx-auto px-0 mt-5 mt-md-3 border-social">
+            <p class="text-light mx-5 mb-3">
+                SB VM DM
+                <br/>
+                2021
+            </p>
+        </div>
+    </div>
+</div>
+<!-- ************************************ Webform ************************************* -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+    
+</body>
+    
+</html>
+  
